@@ -1,0 +1,149 @@
+Total corrected number : 73
+Corrected Percentage : 10.195531%
+Total time spent : 67.01989579200745
+Misspell : accually
+ Correct : actually
+Misspell : addidas
+ Correct : adidas
+Misspell : amazimg
+ Correct : amazing
+Misspell : appology
+ Correct : apology
+Misspell : arguement
+ Correct : argument
+Misspell : awsome
+ Correct : awesome
+Misspell : beutiful
+ Correct : beautiful
+Misspell : blond
+ Correct : blonde
+Misspell : bollicks
+ Correct : bollocks
+Misspell : bollucks
+ Correct : bollocks
+Misspell : boobiez
+ Correct : boobies
+Misspell : bratwurst
+ Correct : bratwurst
+Misspell : celfie
+ Correct : selfie
+Misspell : clumbsy
+ Correct : clumsy
+Misspell : congradulations
+ Correct : congratulations
+Misspell : daygo
+ Correct : dago
+Misspell : definately
+ Correct : definitely
+Misspell : definetely
+ Correct : definitely
+Misspell : definitly
+ Correct : definitely
+Misspell : diarhea
+ Correct : diarrhea
+Misspell : ecstacy
+ Correct : ecstasy
+Misspell : embarass
+ Correct : embarrass
+Misspell : engish
+ Correct : english
+Misspell : entrence
+ Correct : entrance
+Misspell : epitomy
+ Correct : epitome
+Misspell : everythink
+ Correct : everything
+Misspell : faecbook
+ Correct : facebook
+Misspell : fanboi
+ Correct : fanboy
+Misspell : feminista
+ Correct : feminist
+Misspell : fourty
+ Correct : forty
+Misspell : genious
+ Correct : genius
+Misspell : godamn
+ Correct : goddamn
+Misspell : goregous
+ Correct : gorgeous
+Misspell : hampster
+ Correct : hamster
+Misspell : humerous
+ Correct : humorous
+Misspell : immigratio
+ Correct : immigration
+Misspell : incerdible
+ Correct : incredible
+Misspell : injoy
+ Correct : enjoy
+Misspell : jenius
+ Correct : genius
+Misspell : jeopardy
+ Correct : jeopardy
+Misspell : lazyness
+ Correct : laziness
+Misspell : luverly
+ Correct : loverly
+Misspell : magick
+ Correct : magic
+Misspell : magnificant
+ Correct : magnificent
+Misspell : masterbating
+ Correct : masturbating
+Misspell : masterbation
+ Correct : masturbation
+Misspell : metre
+ Correct : metre
+Misspell : ninjitsu
+ Correct : ninjutsu
+Misspell : octoberfest
+ Correct : oktoberfest
+Misspell : orgasim
+ Correct : orgasm
+Misspell : peops
+ Correct : people
+Misspell : polotics
+ Correct : politics
+Misspell : proabably
+ Correct : probably
+Misspell : psychadelic
+ Correct : psychedelic
+Misspell : purpouse
+ Correct : purpose
+Misspell : puusy
+ Correct : pussy
+Misspell : rasberry
+ Correct : raspberry
+Misspell : reneg
+ Correct : renege
+Misspell : retart
+ Correct : retard
+Misspell : s3xy
+ Correct : sexy
+Misspell : separate
+ Correct : separate
+Misspell : seriosly
+ Correct : seriously
+Misspell : sexxy
+ Correct : sexy
+Misspell : sophmore
+ Correct : sophomore
+Misspell : steriod
+ Correct : steroid
+Misspell : stupify
+ Correct : stupefy
+Misspell : stupi
+ Correct : stupid
+Misspell : testicules
+ Correct : testicles
+Misspell : til
+ Correct : till
+Misspell : uselss
+ Correct : useless
+Misspell : waterboarding
+ Correct : waterboarding
+Misspell : whoah
+ Correct : whoa
+Misspell : womyn
+ Correct : woman
