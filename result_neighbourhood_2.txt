@@ -1,21 +1,17 @@
-Total corrected number : 90
-Corrected Percentage : 12.569832%
-Total time spent : 5513.940858125687 seconds
+Total corrected number : 87
+Corrected Percentage : 12.150838%
+Total time spent : 67.42346596717834 seconds
 Misspell : accually
  Correct : actually
 Misspell : addidas
  Correct : adidas
-Misspell : adn
- Correct : and
+Misspell : airborn
+ Correct : airborne
 Misspell : akward
  Correct : awkward
-Misspell : alchohal
- Correct : alcohol
 Misspell : alterior
  Correct : ulterior
 Misspell : amazimg
- Correct : amazing
-Misspell : amazong
  Correct : amazing
 Misspell : appology
  Correct : apology
@@ -25,28 +21,28 @@ Misspell : awsome
  Correct : awesome
 Misspell : beutiful
  Correct : beautiful
+Misspell : bibl
+ Correct : bible
+Misspell : blatently
+ Correct : blatantly
+Misspell : bollicks
+ Correct : bollocks
 Misspell : bollucks
  Correct : bollocks
-Misspell : bonza
- Correct : bonzer
-Misspell : boobes
- Correct : boobs
 Misspell : boobiez
  Correct : boobies
-Misspell : bratwurst
- Correct : bratwurst
-Misspell : bwt
- Correct : btw
+Misspell : bubbla
+ Correct : bubbler
 Misspell : caffiene
  Correct : caffeine
-Misspell : cheezy
- Correct : cheesy
+Misspell : celfie
+ Correct : selfie
 Misspell : clumbsy
  Correct : clumsy
-Misspell : condragulations
- Correct : congratulations
 Misspell : congradulations
  Correct : congratulations
+Misspell : cutiest
+ Correct : cutest
 Misspell : definately
  Correct : definitely
 Misspell : definetely
@@ -55,66 +51,66 @@ Misspell : definitly
  Correct : definitely
 Misspell : deuche
  Correct : douche
+Misspell : dirrty
+ Correct : dirty
 Misspell : dooche
  Correct : douche
 Misspell : drunck
  Correct : drunk
-Misspell : durnk
- Correct : drunk
 Misspell : ecstacy
  Correct : ecstasy
-Misspell : ectasy
- Correct : ecstasy
+Misspell : eigth
+ Correct : eighth
 Misspell : embarass
  Correct : embarrass
 Misspell : engish
  Correct : english
+Misspell : epitomy
+ Correct : epitome
 Misspell : everythink
  Correct : everything
-Misspell : exept
- Correct : except
 Misspell : faecbook
  Correct : facebook
-Misspell : fhone
- Correct : phone
-Misspell : frisby
- Correct : frisbee
+Misspell : fanboi
+ Correct : fanboy
 Misspell : genious
  Correct : genius
 Misspell : gernade
  Correct : grenade
 Misspell : godamn
  Correct : goddamn
-Misspell : googleplex
- Correct : googolplex
 Misspell : goregous
  Correct : gorgeous
-Misspell : grammer
- Correct : grammar
+Misspell : gotton
+ Correct : gotten
 Misspell : guiness
  Correct : guinness
 Misspell : hampster
  Correct : hamster
-Misspell : hopless
- Correct : hopeless
-Misspell : illeterate
- Correct : illiterate
+Misspell : haterz
+ Correct : haters
+Misspell : heeb
+ Correct : hebe
+Misspell : hellow
+ Correct : hello
 Misspell : immigratio
  Correct : immigration
 Misspell : incerdible
  Correct : incredible
+Misspell : infomation
+ Correct : information
 Misspell : jeopardy
  Correct : jeopardy
-Misspell : jrunk
- Correct : drunk
+Misspell : khristian
+ Correct : christian
 Misspell : kidz
  Correct : kids
 Misspell : lazyness
  Correct : laziness
-Misspell : lezbo
- Correct : lesbo
-Misspell : logik
- Correct : logic
+Misspell : ligit
+ Correct : legit
+Misspell : lobsta
+ Correct : lobster
 Misspell : luverly
  Correct : loverly
 Misspell : masterbate
@@ -127,32 +123,28 @@ Misspell : octoberfest
  Correct : oktoberfest
 Misspell : orgasim
  Correct : orgasm
-Misspell : persistant
- Correct : persistent
-Misspell : phsycotic
- Correct : psychotic
 Misspell : polotics
  Correct : politics
-Misspell : ponse
- Correct : ponce
 Misspell : proabably
  Correct : probably
+Misspell : proove
+ Correct : prove
 Misspell : puusy
  Correct : pussy
-Misspell : qool
- Correct : cool
-Misspell : raep
- Correct : rape
+Misspell : pwning
+ Correct : owning
 Misspell : rasberry
  Correct : raspberry
 Misspell : reneg
  Correct : renege
+Misspell : retarted
+ Correct : retarded
 Misspell : s3xy
  Correct : sexy
+Misspell : separate
+ Correct : separate
 Misspell : seriosly
  Correct : seriously
-Misspell : sexxy
- Correct : sexy
 Misspell : simsons
  Correct : simpsons
 Misspell : sophmore
@@ -163,21 +155,23 @@ Misspell : stupi
  Correct : stupid
 Misspell : testicules
  Correct : testicles
-Misspell : toliet
- Correct : toilet
-Misspell : tomarrow
- Correct : tomorrow
+Misspell : til
+ Correct : till
 Misspell : uselss
  Correct : useless
+Misspell : vaccum
+ Correct : vacuum
+Misspell : vaccuum
+ Correct : vacuum
+Misspell : villian
+ Correct : villain
+Misspell : waht
+ Correct : what
 Misspell : wassabi
  Correct : wasabi
 Misspell : waterboarding
  Correct : waterboarding
-Misspell : wendsday
- Correct : wednesday
 Misspell : whoah
  Correct : whoa
 Misspell : womyn
  Correct : woman
-Misspell : yopu
- Correct : you

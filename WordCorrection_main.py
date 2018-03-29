@@ -64,10 +64,7 @@ def ngram_search():
                 potential_words.append(dictionary_words[j])
         
         for k in range(len(potential_words)):
-            #TODO Do we need to use N-gram to compare the result???
-            nList_correct = ngram_split(NGRAM, correct_words[i])
-            nList_potential = ngram_split(NGRAM, potential_words[k])
-            if ngram_compare(nList_potential, nList_correct) == MATCH:
+            if potential_words[k] == correct_words[i]:
                 corrections[misspell_words[i]] = potential_words[k]
                 break
 
@@ -171,5 +168,5 @@ def edits3(word):
     Run different correction algorithms
 '''
 #global_edit_distance()
-#ngram_search()
-neighbourhood_search()
+ngram_search()
+#neighbourhood_search()

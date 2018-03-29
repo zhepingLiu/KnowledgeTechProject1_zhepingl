@@ -1,0 +1,144 @@
+Total corrected number : 47
+Corrected Percentage : 6.564246%
+Total time spent : 2680.336944103241 seconds
+Misspell : addidas
+ Correct : adidas
+
+Misspell : appology
+ Correct : apology
+
+Misspell : beery
+ Correct : berry
+
+Misspell : bobies
+ Correct : boobies
+
+Misspell : bratwurst
+ Correct : bratwurst
+
+Misspell : bss
+ Correct : bs
+
+Misspell : colour
+ Correct : colour
+
+Misspell : cuttie
+ Correct : cutie
+
+Misspell : diarhea
+ Correct : diarrhea
+
+Misspell : dill
+ Correct : dil
+
+Misspell : dirrty
+ Correct : dirty
+
+Misspell : embarass
+ Correct : embarrass
+
+Misspell : entrence
+ Correct : entrance
+
+Misspell : fagot
+ Correct : faggot
+
+Misspell : fooot
+ Correct : foot
+
+Misspell : godamn
+ Correct : goddamn
+
+Misspell : guiness
+ Correct : guinness
+
+Misspell : hatter
+ Correct : hater
+
+Misspell : hobit
+ Correct : hobbit
+
+Misspell : hott
+ Correct : hot
+
+Misspell : jedd
+ Correct : jed
+
+Misspell : jeopardy
+ Correct : jeopardy
+
+Misspell : loose
+ Correct : lose
+
+Misspell : looser
+ Correct : loser
+
+Misspell : masterbate
+ Correct : masturbate
+
+Misspell : metre
+ Correct : metre
+
+Misspell : morron
+ Correct : moron
+
+Misspell : olol
+ Correct : lol
+
+Misspell : proabably
+ Correct : probably
+
+Misspell : proff
+ Correct : proof
+
+Misspell : proove
+ Correct : prove
+
+Misspell : puusy
+ Correct : pussy
+
+Misspell : quen
+ Correct : queen
+
+Misspell : raper
+ Correct : rapper
+
+Misspell : separate
+ Correct : separate
+
+Misspell : servise
+ Correct : service
+
+Misspell : sexxy
+ Correct : sexy
+
+Misspell : slep
+ Correct : sleep
+
+Misspell : smels
+ Correct : smells
+
+Misspell : teriffic
+ Correct : terrific
+
+Misspell : thee
+ Correct : the
+
+Misspell : til
+ Correct : till
+
+Misspell : travellers
+ Correct : travelers
+
+Misspell : vaccum
+ Correct : vacuum
+
+Misspell : vaccuum
+ Correct : vacuum
+
+Misspell : wassabi
+ Correct : wasabi
+
+Misspell : waterboarding
+ Correct : waterboarding
+
