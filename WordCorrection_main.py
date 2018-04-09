@@ -1,3 +1,7 @@
+'''
+    Knowledge Technology Project 1
+    Zheping Liu, 683781, zhepingl
+'''
 import time
 import editdistance
 import re
@@ -6,12 +10,15 @@ from collections import Counter
 #correct them, and comparing the results to all entries in the correct 
 #.txt file
 
-#Algorithm 1: Edit Distance (Global and Local)
+#Algorithm 1: Global Edit Distance
 #Algorithm 2: N-gram Distance
 #Algorithm 3: Neighbourhood Search
 
+#Scope of Global Edit Distance and N-gram distance
 SCOPE = 2
-NGRAM = 2
+#N in the N-gram
+NGRAM = 3
+
 MATCH = 0
 HASH = "#"
 
@@ -25,26 +32,36 @@ dictionary_words = dictionary.readlines()
 
 # the dictionary records every corrected word
 corrections = dict()
-
-#Algorithm 1: Global Edit Distance (Naive Approach)
+# the dictionary records every failed word
+failure = dict()
+#Algorithm 1: Global Edit Distance
 '''
     Spell Correction algorithm using Global Edit Distance
 '''
 def global_edit_distance():
     start_time = time.time()
+    attempt = 0
+    print("Global Edit Distance Result with Scope = %d" % SCOPE)
+    #find all potential attempts within defined scope for each misspelled word
     for i in range(len(misspell_words)):
         potential_words = []
+        #record all words failed to match the correct one
+        failure_words = []
         for j in range(len(dictionary_words)):
             if editdistance.eval(misspell_words[i], 
                                 dictionary_words[j]) <= SCOPE:
                 potential_words.append(dictionary_words[j])
+                attempt += 1
         
+        #compare all potential attempts with the correct word
         for k in range(len(potential_words)):
             if editdistance.eval(potential_words[k], correct_words[i]) == MATCH:
                 corrections[misspell_words[i]] = potential_words[k]
-                break
+            else:
+                failure_words.append(potential_words[k])
+                failure[misspell_words[i]] = failure_words
     
-    print_correction(corrections, start_time)
+    print_correction(corrections, failure, attempt, start_time)
 
 
 #Algorithm 2: N-gram Distance
@@ -53,28 +70,46 @@ def global_edit_distance():
 '''
 def ngram_search():
     start_time = time.time()
+    attempt = 0
+    ngram_dict = []
+    print("N-gram Distance Result with n = %d, scope = %d" % (NGRAM, SCOPE))
+
+    #split words in dictionary into n-grams
+    for j in range(len(dictionary_words)):
+            ngram_dict.append(ngram_split(NGRAM, dictionary_words[j]))
+
+    #find all potential attempts within defined scope for each misspelled word
     for i in range(len(misspell_words)):
         potential_words = []
+        failure_words = []
+        #split misspelled words into n-grams
         nList_misspell = ngram_split(NGRAM, misspell_words[i])
+
+        #compute n-gram distance between misspelled word 
+        #and each dictionary word
         for j in range(len(dictionary_words)):
-            nList_dict = ngram_split(NGRAM, dictionary_words[j])
+            nList_dict = ngram_dict[j]
             result = ngram_compare(nList_misspell, nList_dict)
 
             if result <= SCOPE:
                 potential_words.append(dictionary_words[j])
-        
+                attempt += 1
+        #compare all potential attempts with the correct word
         for k in range(len(potential_words)):
             if potential_words[k] == correct_words[i]:
                 corrections[misspell_words[i]] = potential_words[k]
-                break
+            else:
+                failure_words.append(potential_words[k])
+                failure[misspell_words[i]] = failure_words
 
-    print_correction(corrections, start_time)
+    print_correction(corrections, failure, attempt, start_time)
 
 '''
     Split text into n-gram segments n is the length of each segment
 '''
 def ngram_split(n, text):
     nList = []
+    #add '#' at both the begining and the end
     if n > 1:
         text = HASH + text + HASH
 
@@ -98,29 +133,55 @@ def ngram_compare(list1, list2):
 
 #Algorithm 3: Neighbourhood Search
 '''
-    Spell correction algorithm using neighbourhood search
+    Spell correction algorithm using neighbourhood search without selecting
+    the one with maximum probability
 '''
-def neighbourhood_search():
+def neighbourhood_search_candidates():
     start_time = time.time()
-    for i in range(len(misspell_words)):
-        corrected = correction(misspell_words[i])
-        if words(corrected) == words(correct_words[i]):
-            corrections[misspell_words[i]] = corrected
+    attempt = 0
+    print("Neighbourhood Search Result")
     
-    print_correction(corrections, start_time)
+    for i in range(len(misspell_words)):
+        #find all potential attempts within defined number of edits
+        potential_words = candidates(misspell_words[i])
+        failure_words = []
+        attempt += len(potential_words)
+        
+        #compare each attempt with correct word
+        for word in potential_words:
+            if (word == correct_words[i].rstrip()):
+                corrections[misspell_words[i]] = word
+            else:
+                failure_words.append(word)
+                failure[misspell_words[i]] = failure_words
+    print_correction(corrections, failure, attempt, start_time)
 
 '''
     Print the result of correction and percentage corrected
 '''
-def print_correction(corrections, start_time):
-    percentage = len(corrections) / len(correct_words)
-    print("Total corrected number : %d" % len(corrections))
-    print("Corrected Percentage : %f%%" % (percentage * 100))
+def print_correction(corrections, failure, attempt, start_time):
+    recall = len(corrections) / len(correct_words)
+    percision = len(corrections) / attempt
 
-    print("Total time spent : %s seconds" % (time.time() - start_time))
+    print("###Total corrected number : %d" % len(corrections))
 
+    # Print Recall
+    print("###Recall : %f%%" % (recall * 100))
+    # Print Percision
+    print("###Percision : %f%%" % (percision * 100))
+    # Print Runtime
+    print("###Total time spent : %s seconds" % (time.time() - start_time))
+
+    # Print corrected words
+    print("###Words Corrected###")
     for key, value in corrections.items():
         print("Misspell : %s Correct : %s" % (key, value))
+    
+    # Print failed words
+    print("\n###Words Failed###")
+    for key, value in failure.items():
+        for i in range(len(value)):
+            print("Misspell : %s Failed : %s" % (key, value[i]))
 
 '''
     Source : How to Write a Spelling Corrector
@@ -165,8 +226,8 @@ def edits3(word):
     return (e3 for e1 in edits1(word) for e2 in edits1(e1) for e3 in edits1(e2))
 
 '''
-    Run different correction algorithms
+    Run different spelling correction algorithms
 '''
-#global_edit_distance()
+global_edit_distance()
 ngram_search()
-#neighbourhood_search()
+neighbourhood_search_candidates()

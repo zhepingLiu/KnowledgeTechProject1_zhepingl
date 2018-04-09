@@ -1,0 +1,163 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.10.21)  8 APR 2018 22:09
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**kt_project1_report.tex
+(./kt_project1_report.tex
+LaTeX2e <2017-04-15>
+Babel <3.14> and hyphenation patterns for 84 language(s) loaded.
+(/usr/local/texlive/2017/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
+(/usr/local/texlive/2017/texmf-dist/tex/latex/base/size11.clo
+File: size11.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+) (./colacl.sty
+
+ALTW 2005 Proceedings style -- June 7th 2005
+derived from
+ACL-COLING 1998 Proceedings style -- March 31st 1998
+
+\titlebox=\skip43
+) (/usr/local/texlive/2017/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+ (/usr/local/texlive/2017/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\@emptytoks=\toks14
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)) (./kt_project1_report.aux)
+\openout1 = `kt_project1_report.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Try loading font information for U+msa on input line 10.
+ (/usr/local/texlive/2017/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 10.
+ (/usr/local/texlive/2017/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[1{/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
+
+
+
+] [2]
+Underfull \hbox (badness 1902) in paragraph at lines 251--260
+ \OT1/cmr/m/n/10.95 By ob-serv-ing the re-sults, neigh-bour-hood
+ []
+
+
+Underfull \hbox (badness 2057) in paragraph at lines 286--290
+\OT1/cmr/m/n/10.95 Neigh-bour-hood search achieves a rel-a-tively
+ []
+
+
+Underfull \hbox (badness 5832) in paragraph at lines 293--294
+\OT1/cmr/m/n/10.95 Graham Poul-ter (2012). python-ngram.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 293--294
+
+ []
+
+
+Underfull \hbox (badness 4686) in paragraph at lines 295--296
+[]\OT1/cmr/m/n/10.95 Hiroyuki Tanaka (2013). ed-it-dis-tance.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 295--296
+
+ []
+
+
+Underfull \hbox (badness 2426) in paragraph at lines 297--300
+[]\OT1/cmr/m/n/10.95 Naomi Saphra and Adam Lopez (2016)
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 297--300
+
+ []
+
+
+Underfull \hbox (badness 1668) in paragraph at lines 301--302
+[]\OT1/cmr/m/n/10.95 Peter Norvig (2007). How to Write a
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 301--302
+
+ []
+
+
+Underfull \hbox (badness 1314) in paragraph at lines 303--307
+[]\OT1/cmr/m/n/10.95 Zobel, Justin and Philip Dart. (1996).
+ []
+
+
+Underfull \hbox (badness 4366) in paragraph at lines 303--307
+\OT1/cmr/m/n/10.95 Pho-netic String Match-ing: Lessons from
+ []
+
+
+Underfull \hbox (badness 2970) in paragraph at lines 303--307
+\OT1/cmr/m/n/10.95 In-for-ma-tion Re-trieval. In \OT1/cmr/m/it/10.95 Pro-ceed-ings of
+ []
+
+
+Underfull \hbox (badness 6348) in paragraph at lines 303--307
+\OT1/cmr/m/it/10.95 the Eigh-teenth In-ter-na-tional ACM SI-GIR
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 303--307
+
+ []
+
+[3] (./kt_project1_report.aux) ) 
+Here is how much of TeX's memory you used:
+ 559 strings out of 492990
+ 6227 string characters out of 6132635
+ 67979 words of memory out of 5000000
+ 4169 multiletter control sequences out of 15000+600000
+ 11399 words of font info for 43 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 25i,9n,26p,155b,227s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
+Output written on kt_project1_report.pdf (3 pages, 96513 bytes).
+PDF statistics:
+ 38 PDF objects out of 1000 (max. 8388607)
+ 26 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+

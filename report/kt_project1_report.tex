@@ -1,0 +1,308 @@
+\documentclass[11pt]{article}
+\usepackage{colacl}
+\usepackage{amssymb}
+\sloppy
+
+\title{COMP90049 Knowledge Technology Project 1 Report}
+\author{Anonymous}
+
+\begin{document}
+\maketitle
+
+\section{Introduction}
+  \subsection{Problem}
+  In this project, we need to implement various spelling correction algorithms
+  to correct a list of misspelled words. Then we need to analyse the
+  effectiveness of these algorithms.
+  \subsection{Dataset}
+  We are provided with one text file that contains 716
+  misspelled words, one text file contains 716 correct words of the previous
+  file, and one dictionary text file [Saphra et al. 2016].
+
+\section{Methodology}
+I have applied three spelling correction algorithms to correct.
+These algorithms are Global Edit Distance (with Levenshtein Distance),
+N-grams and Neighbourhood Search.
+
+  \subsection{Global Edit Distance (Levenshtein Distance)}
+  For each entry in the misspelled.txt, compute the Levenshtein distance
+  ([m, i, d, r] = [0, 1, 1, 1]) between
+  it and every entry in dictionary.txt. Record all entries with distance
+  less than the defined scope. I ran the algorithm using scope equals to two
+  and three. Finally, compare these potential
+  words with the correct word listed in the correct.txt and check if any of them
+  matches the correct word. If there is a match, mark the misspelled word as
+  corrected.
+
+  \subsection{N-gram Distance}
+  For each entry in the misspelled.txt, split the words into n-grams, and $\#$ character
+  was added at both the begining and end. The n in this method is defined to be two.
+  Then compute the N-gram Distance between them and every entry in the
+  dictionary.txt. Record all entries with distance less than the defined threshold,
+  which is two and three in this case.
+  Finally, compare these potential words with the correct word listed in
+  the correct.txt and check if any of them matches the correct word.
+  If there is a match, mark the misspelled word as corrected.
+
+  \subsection{Neighbourhood Search}
+  For each entry in the misspelled.txt, generate all variations of the word
+  within defined number of edits. The algorithm is from Peter Norvig [2007].
+  The allowed edits to the word are deletion, transposition, replacement and insertion.
+  The threshold of edits is two. Then record all entries that
+  appear in the dictionary.txt. Compare these potential words with the correct word
+  and check if any of them matches the correct word. If there is a match, mark
+  the misspelled word as corrected.
+
+\section{Evaluation Metrics}
+I have used the following evaluation metrics to evaluate the result of different
+methodologies.
+
+  \paragraph{Recall} The proportion of words with a correct response in the given
+  solution set.
+
+  \paragraph{Precision} The proportion of words corrected comparing
+  to the total attempts generated in different methodologies.
+
+  The runtime (in seconds) for each different algorithm has also been recorded.
+  They can show the efficiency of these algorithms. However, runtime will not be
+  directly considered while evaluating the effect of these methodologies.
+
+\section{Results}
+  \subsection{Global Edit Distance (Levenshtein Distance)}
+  The used library is editdistance that is written in Python by Hinoyuki Tanaka
+  (2013). The result is listed in the table 1 below:
+    \begin{table}[h]
+      \begin{center}
+        \begin{tabular}{|l|l|l|}
+          \hline
+          Metrics & Scope = 2 & Scope = 3\\
+          \hline\hline
+          Words Corrected & 504 & 556\\
+          \hline
+          Recall & 70.39\% & 77.65\% \\
+          \hline
+          Precision & 0.351\% & 0.346\% \\
+          \hline
+          Runtime & 1040.58s & 1079.97s\\
+          \hline
+        \end{tabular}
+        \caption{Result of Global Edit Distance}\label{table1}
+      \end{center}
+    \end{table}
+
+    From the result above, Global edit distance has quite high recall.
+    Improving the scope from two to three will result in correcting $52$ more
+    words, the recall increases around $7\%$. This is not a bad result,
+    especially that the runtime does not rise as the scope increases.
+    However, the precisions are very low. This implies global edit distance
+    has generated large amount of attempts.
+    \paragraph{}
+    After increasing the scope, the precision only drops by $0.005\%$.
+    This indicates that increasing the scope does not
+    generate huge number of additional attempts.
+
+    \subsubsection{Example}
+      \begin{table}[h]
+        \begin{center}
+          \begin{tabular}{|l|l|l|}
+            \hline
+            Misspelled & Correct & Candidate(s)\\
+            \hline\hline
+            b4 & before & ab, aba, etc.\\
+            \hline
+            gawgus & gorgeous & gangue etc.\\
+            \hline
+            tiddies & titties & \checkmark\\
+            \hline
+            genious & genius & \checkmark\\
+            \hline
+            thru & through & \checkmark\\
+            \hline
+          \end{tabular}
+          \caption{Examples of Global Edit Distance}\label{table2}
+        \end{center}
+      \end{table}
+
+      \subsubsection{Analysis}
+      \paragraph{}
+      Firstly, the global edit distance is not so effective when the misspelled
+      words is very different with the correct words in length. Example \textbf{b4} and \textbf{gawgus}
+      can prove this case. The huge difference in lengths between \textbf{before}, \textbf{gorgeous} and
+      \textbf{b4}, \textbf{gawgus} makes global edit distance hard to find the correct words within such
+      small scope.
+      \paragraph{}
+      On the other hand, global edit distance is quite useful with words having
+      similar lengths. Such as, \textbf{tiddies} and \textbf{titties},
+      \textbf{genious} and \textbf{genius}.
+      \paragraph{}
+      By observing the result, it is found that most
+      misspelled words corrected have similar lengths as their correct words.
+      This result enhances the statement above, similar lengths between misspelled
+      words and correct words makes the Levenshtein distance between them relatively
+      smaller. Hence, the global edit distance method is easier to identify the
+      correct words.
+      \paragraph{}
+      Also, by increasing the scope. Global edit distance can now identify words more words
+      with larger differences in lengths between misspelled and correct words.
+      For instance, \textbf{thru} and its correct word \textbf{through}.
+
+  \subsection{N-gram Distance}
+    \begin{table}[h]
+      \begin{center}
+        \begin{tabular}{|l|l|l|}
+          \hline
+          Metrics & Scope=2 & Scope=3\\
+          \hline\hline
+          Words Corrected & 47 & 153\\
+          \hline
+          Recall & 6.56\% & 21.37\%\\
+          \hline
+          precision & 10.24\% & 5.73\%\\
+          \hline
+          Runtime & 968.39s & 857.26s\\
+          \hline
+        \end{tabular}
+        \caption{Result of N-gram Distance}\label{table3}
+      \end{center}
+    \end{table}
+
+    \paragraph{}
+    As the table states, the recall of N-gram distance are not high.
+    This indicates N-gram distance method does not find the corrected words for
+    most misspelled words. The precision is quite high, which states that the number
+    of attempts generated is relatively small comparing to global edit distance, some
+    of the misspelled words even do not have any attempts generated.
+    However, the efficiency of splitting words into n-grams and compute the
+    n-gram distance is similar to compute Levenshtein distance.
+    \paragraph{}
+    After increasing the scope from two to three, the number of words corrected
+    and the recall has tripled. The precision has dropped, which implies more
+    attempts are generated.
+
+    \subsubsection{Example}
+      \begin{table}[h]
+        \begin{center}
+          \begin{tabular}{|l|l|l|}
+            \hline
+            Misspelled & Correct & Candidate(s)\\
+            \hline\hline
+            addidas & adidas & \checkmark \\
+            \hline
+            proabably & probably & \checkmark\\
+            \hline
+            quen & queen & \checkmark\\
+            \hline
+            servise & service & \checkmark\\
+            \hline
+            beutiful & beautiful & \checkmark\\
+            \hline
+          \end{tabular}
+          \caption{Examples of N-gram Distance}\label{table4}
+        \end{center}
+      \end{table}
+
+      \paragraph{}
+      From the result, it is found that N-gram distance is most effective when
+      the misspelled words and correct words are made of similar letters.
+      As the examples in the table illustrates, \textbf{addidas} is
+      made of the same letters as its correct form \textbf{adidas}, but with one
+      more letter \textbf{d}. Similarly, \textbf{proabably} is also made of same
+      letters as \textbf{probably}, with one more letter \textbf{a}.
+      \paragraph{}
+      Besides the situations when misspelled words have more letters than their
+      correct form, n-gram can also be effective for missing letters. For instance,
+      \textbf{quen} has one less \textbf{e} than \textbf{queen}.
+      \paragraph{}
+      In addition, n-grams can also be relatively effective when there is only
+      small difference between misspelled form and correct form. Such as
+      \textbf{servise} and \textbf{service} in the examples.
+      \paragraph{}
+      Nevertheless, when the misspelled words and correct words are made with
+      very different letters, it is ineffective. This is since the n-gram distance
+      for words made of similar letters is smaller. This can be proven by the
+      result of increasing the scope. After the scope increases, far more attempts
+      with higher n-gram distance are generated. Like the word \textbf{beutiful}
+      is now corrected to \textbf{beautiful}, where the letter \textbf{a} does not
+      appear in the misspelled form.
+      This is because words made of different letters are not excluded by the
+      small scope this time.
+
+  \subsection{Neighbourhood Search}
+    \begin{table}[h]
+      \begin{center}
+        \begin{tabular}{|l|l|l|}
+          \hline
+          Metrics & Edits = 2 & Edits = 3\\
+          \hline\hline
+          Words Corrected & 267 & 285\\
+          \hline
+          Recall & 37.29\% & 39.80\% \\
+          \hline
+          Precision & 3.05\% & 2.72\% \\
+          \hline
+          Runtime & 55.49s & 4482.37s\\
+          \hline
+        \end{tabular}
+        \caption{Result of Neighbourhood Search}\label{table5}
+      \end{center}
+    \end{table}
+
+    \paragraph{}
+    By observing the results, neighbourhood search results in a relatively low recall.
+    It is better than the N-gram approach, but worse than global edit distance
+    approach. The precision results display the fact that neighbourhood search
+    has generated relatively large number of attempts. The efficiency when
+    number of edits is equal to two is very high, only took the program to complete
+    within one minute.
+    However, efficiency drops exponentially after increasing the number of edits.
+    Both the recall and precision do not change massively after number of edits
+    increased.
+
+    \subsection{Example}
+      \begin{table}[h]
+        \begin{center}
+          \begin{tabular}{|l|l|l|}
+            \hline
+            Misspelled & Correct & Candidate(s)\\
+            \hline\hline
+            psychadelic & psychedelic & \checkmark\\
+            \hline
+            raido & radio & \checkmark\\
+            \hline
+          \end{tabular}
+          \caption{Examples of Neighbourhood Search}\label{table6}
+        \end{center}
+      \end{table}
+
+      \paragraph{}
+      From the results, similar conclusion as the global edit distance is obtained,
+      where misspelled words and the correct words with similar lengths are likely
+      to be corrected by neighbourhood search. For instance, \textbf{psychadelic}
+      and \textbf{psychedelic}. In addition, since this neighbourhood
+      search algorithm has transposition as one edit, it can easily correct misspelled
+      with wrong order between letters, like \textbf{raido} and \textbf{radio}.
+
+\section{Conclusions}
+  In conclusion, by comparing three different spelling correction algorithms,
+  global edit distance achieves the best results out of them. Neighbourhood search
+  achieves a relatively good result and with absolutely higher effeciency. N-gram
+  distance has limited effectiveness comparing to the other two methods.
+
+\section{References}
+
+  Graham Poulter (2012). python-ngram. http://github.com/gpoulter/python-ngram. \\
+
+  Hiroyuki Tanaka (2013). editdistance. https://www.github.com/aflc/editdistance. \\
+
+  Naomi Saphra and Adam Lopez (2016) Evaluating Informal-Domain Word Representations
+  with UrbanDictionary. In \textit{Proceedings of the 1st Workshop on Evaluating Vector-Space
+  Representations for NLP}, Berlin, Germany. pp. 94-98. \\
+
+  Peter Norvig (2007). How to Write a Spelling Corrector. http://norvig.com/spell-correct.html. \\
+
+  Zobel, Justin and Philip Dart. (1996). Phonetic String Matching: Lessons from
+  Information Retrieval. In \textit{Proceedings of the Eighteenth International
+  ACM SIGIR Conference on Research and Development in Information Retrieval}. Zurich
+  , Switzerland. pp. 166-173. \\
+
+\end{document}
