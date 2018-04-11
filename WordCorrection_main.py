@@ -17,7 +17,7 @@ from collections import Counter
 #Scope of Global Edit Distance and N-gram distance
 SCOPE = 2
 #N in the N-gram
-NGRAM = 3
+NGRAM = 2
 
 MATCH = 0
 HASH = "#"

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.10.21)  8 APR 2018 22:09
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.10.21)  11 APR 2018 11:56
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -70,48 +70,21 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 ] [2]
-Underfull \hbox (badness 1902) in paragraph at lines 251--260
+Underfull \hbox (badness 1902) in paragraph at lines 258--267
  \OT1/cmr/m/n/10.95 By ob-serv-ing the re-sults, neigh-bour-hood
  []
 
 
-Underfull \hbox (badness 2057) in paragraph at lines 286--290
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \hbox (badness 2057) in paragraph at lines 294--298
 \OT1/cmr/m/n/10.95 Neigh-bour-hood search achieves a rel-a-tively
  []
 
 
-Underfull \hbox (badness 5832) in paragraph at lines 293--294
+Underfull \hbox (badness 5832) in paragraph at lines 301--302
 \OT1/cmr/m/n/10.95 Graham Poul-ter (2012). python-ngram.
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 293--294
-
- []
-
-
-Underfull \hbox (badness 4686) in paragraph at lines 295--296
-[]\OT1/cmr/m/n/10.95 Hiroyuki Tanaka (2013). ed-it-dis-tance.
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 295--296
-
- []
-
-
-Underfull \hbox (badness 2426) in paragraph at lines 297--300
-[]\OT1/cmr/m/n/10.95 Naomi Saphra and Adam Lopez (2016)
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 297--300
-
- []
-
-
-Underfull \hbox (badness 1668) in paragraph at lines 301--302
-[]\OT1/cmr/m/n/10.95 Peter Norvig (2007). How to Write a
  []
 
 
@@ -120,27 +93,57 @@ Underfull \hbox (badness 10000) in paragraph at lines 301--302
  []
 
 
-Underfull \hbox (badness 1314) in paragraph at lines 303--307
+Underfull \hbox (badness 4686) in paragraph at lines 303--304
+[]\OT1/cmr/m/n/10.95 Hiroyuki Tanaka (2013). ed-it-dis-tance.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 303--304
+
+ []
+
+
+Underfull \hbox (badness 2426) in paragraph at lines 305--308
+[]\OT1/cmr/m/n/10.95 Naomi Saphra and Adam Lopez (2016)
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 305--308
+
+ []
+
+
+Underfull \hbox (badness 1668) in paragraph at lines 309--310
+[]\OT1/cmr/m/n/10.95 Peter Norvig (2007). How to Write a
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 309--310
+
+ []
+
+
+Underfull \hbox (badness 1314) in paragraph at lines 311--315
 []\OT1/cmr/m/n/10.95 Zobel, Justin and Philip Dart. (1996).
  []
 
 
-Underfull \hbox (badness 4366) in paragraph at lines 303--307
+Underfull \hbox (badness 4366) in paragraph at lines 311--315
 \OT1/cmr/m/n/10.95 Pho-netic String Match-ing: Lessons from
  []
 
 
-Underfull \hbox (badness 2970) in paragraph at lines 303--307
+Underfull \hbox (badness 2970) in paragraph at lines 311--315
 \OT1/cmr/m/n/10.95 In-for-ma-tion Re-trieval. In \OT1/cmr/m/it/10.95 Pro-ceed-ings of
  []
 
 
-Underfull \hbox (badness 6348) in paragraph at lines 303--307
+Underfull \hbox (badness 6348) in paragraph at lines 311--315
 \OT1/cmr/m/it/10.95 the Eigh-teenth In-ter-na-tional ACM SI-GIR
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 303--307
+Underfull \hbox (badness 10000) in paragraph at lines 311--315
 
  []
 
@@ -154,7 +157,7 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  25i,9n,26p,155b,227s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on kt_project1_report.pdf (3 pages, 96513 bytes).
+Output written on kt_project1_report.pdf (3 pages, 97408 bytes).
 PDF statistics:
  38 PDF objects out of 1000 (max. 8388607)
  26 compressed objects within 1 object stream
